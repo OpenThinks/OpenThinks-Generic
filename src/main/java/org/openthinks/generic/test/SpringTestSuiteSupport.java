@@ -14,8 +14,8 @@ import org.springframework.test.context.ContextConfiguration;
  * 
  */
 @RunWith(Suite.class)
-@ContextConfiguration({ "/resources/spring/applicationContext-*.xml",
-		"/resources/spring/test/*.xml" })
+@ContextConfiguration({ "/spring/applicationContext-*.xml",
+		"/spring/test/*.xml" })
 public abstract class SpringTestSuiteSupport {
 
 }

@@ -167,18 +167,18 @@
     <build>
         <resources>
             <resource>
-                <directory>src/main</directory>
-                <excludes>
-                    <exclude>**/.*</exclude>
-                </excludes>
+                <directory>${project.basedir}/src/main/java</directory>
             </resource>
             <resource>
-                <directory>src/test</directory>
-                <excludes>
-                    <exclude>**/.*</exclude>
-                </excludes>
+                <directory>${project.basedir}/src/main/js</directory>
+                <targetPath>js</targetPath>
             </resource>
         </resources>
+        <testResources>
+            <testResource>
+                <directory>${project.basedir}/src/test/java</directory>
+            </testResource>
+        </testResources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
